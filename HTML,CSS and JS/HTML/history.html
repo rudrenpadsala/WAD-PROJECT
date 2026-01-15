@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FarmWise | History</title>
+  <link rel="stylesheet" href="history.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">FarmWise</div>
+
+  <nav class="menu">
+    <button onclick="goToSoil()">SOIL</button>
+    <button onclick="goToCrop()">CROP</button>
+    <button onclick="goToPlanner()">PLANNER</button>
+    <button onclick="goToAdvisor()">ADVISOR</button>
+    <button class="active">HISTORY</button>
+    <button onclick="goToReminders()">REMINDERS</button>
+  </nav>
+  <div class="theme">🌙</div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="history-container">
+  <div class="top-row">
+    <h1>Recent Activity</h1>
+    <button class="clear-btn" onclick="clearHistory()">Clear All</button>
+  </div>
+
+  <!-- EMPTY STATE -->
+  <div class="empty-state" id="historyList">
+    <div class="icon">🕒</div>
+    <h3>No history yet</h3>
+    <p>Your soil checks, crop plans, and advisor chats will appear here.</p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <h2>FarmWise Intelligence</h2>
+  <div class="stats">
+    <div>
+      <h1>0</h1>
+      <span>REPORTS</span>
+    </div>
+    <div>
+      <h1>0</h1>
+      <span>PENDING TASKS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="history.js"></script>
+</body>
+</html>
